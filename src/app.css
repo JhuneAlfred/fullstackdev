@@ -1,0 +1,57 @@
+.headroom {
+  height: 80px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 3em;
+  padding-left: 20px;
+  padding-top: 20px;
+  vertical-align: text-bottom;
+  -webkit-transition: 'all .5s ease-in-out';
+  -moz-transition: 'all .5s ease-in-out';
+  -o-transition: 'all .5s ease-in-out';
+  transition: 'all .5s ease-in-out';
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+.navbar {
+  background-color: rgba(209, 212, 214, 0.959);
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-info {
+  text-align: center;
+  font-weight: bold;
+}
+
+.page-content {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+}
