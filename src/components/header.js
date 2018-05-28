@@ -3,8 +3,8 @@ import { Sticky, StickyContainer } from '../sticky'
 import Headroom from 'react-headroom'
 
 import '../stylesheets/app.css'
+import '../stylesheets/sticky.css'
 
-let renderCount = 0
 export const Header = () => (
   <div>
     <StickyContainer>
@@ -12,7 +12,7 @@ export const Header = () => (
         but certain styles can break the positioning logic used. */}
       <Sticky>
         {({
-          style,
+          style = 'pinTop',
 
           // the following are also available but unused in this example
           isSticky,

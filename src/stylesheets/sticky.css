@@ -28,3 +28,10 @@ body {
   border-radius: 0;
   margin: 0;
 }
+
+.pinTop,
+.headroom--unpinned {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
