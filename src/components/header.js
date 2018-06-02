@@ -17,15 +17,12 @@ export const Header = () => (
           // the following are also available but unused in this example
           isSticky,
           wasSticky,
-          distanceFromTop,
+          distanceFromTop = '0',
           distanceFromBottom,
-          calculatedHeight
+          calculatedHeight = '100%'
         }) => <Headroom style={style}>{/* ... */}full stack dev</Headroom>}
       </Sticky>
       {/* ... */}
     </StickyContainer>
   </div>
-  //   <Sticky className="sticky-two">
-  //     <div>Full StacK Dev</div>
-  //   </Sticky>
 )
