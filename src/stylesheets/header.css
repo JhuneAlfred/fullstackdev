@@ -1,0 +1,41 @@
+.headroom {
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding-left: 20px;
+  padding-top: 20px;
+  vertical-align: text-bottom;
+  -webkit-transition: 'all .5s ease-in-out';
+  -moz-transition: 'all .5s ease-in-out';
+  -o-transition: 'all .5s ease-in-out';
+  transition: 'all .5s ease-in-out';
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.headroom-wrapper {
+  height: 100% !important;
+}
+
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+.siteName {
+  font-size: 1.5em;
+}
