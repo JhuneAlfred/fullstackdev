@@ -6,9 +6,7 @@ export const Template = ({ title, text }) => (
     <Header />
     <div className="page-info" style={{ height: '100%' }}>
       {title}
-      <p>
-        <div className="page-content">{text}</div>
-      </p>
+      <div className="page-content">{text}</div>
     </div>
   </div>
 )
